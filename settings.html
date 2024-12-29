@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+    </nav>
+    <section class="container">
+        <h1>Settings</h1>
+        <div class="form-control">
+            <label for="theme">Select Theme:</label>
+            <select id="theme">
+                <option value="default">Default</option>
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="time-format">Time Format:</label>
+            <select id="time-format">
+                <option value="24">24-Hour</option>
+                <option value="12">12-Hour</option>
+            </select>
+        </div>
+        <button class="save-setting-button" onclick="saveSettings()">Save Settings</button>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Alarm Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rubik+Wet+Paint&display=swap');
+    </style>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+    </nav>
+    <section class="container">
+        <div id="clock"></div>
+        <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
+        <div class="controls">
+            <button onclick="setAlarm()" class="button set-alarm">Set Alarm</button>
+            <button onclick="clearAlarm()" class="button clear-alarm">Clear Alarm</button>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
